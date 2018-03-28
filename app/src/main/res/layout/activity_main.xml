@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anton.dialog_fragment.MainActivity">
+    <Button
+        android:id="@+id/btn_vnesiZbor"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Зачувај збор" />
+
+    <Button
+        android:id="@+id/btn_Baraj"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_vnesiZbor"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="52dp"
+        android:text="Барај" />
+
+    <TextView
+        android:id="@+id/txt_View"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edt_Zbor"
+        android:layout_marginTop="73dp"
+        android:text="Приказ" />
+
+    <EditText
+        android:id="@+id/edt_Zbor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_vnesiZbor"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Внеси збор"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edt_Opis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edt_Zbor"
+        android:layout_below="@+id/edt_Zbor"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Опис"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>
